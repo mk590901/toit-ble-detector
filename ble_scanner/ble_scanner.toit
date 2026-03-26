@@ -3,7 +3,6 @@ import ntp
 import esp32 show adjust-real-time-clock
 import .periodic_timer
 import .ble_utils
-//import .toit_rest_api
 
 DEVICE_NAME     ::= "R09_0803"
 scan_period     ::= 4     //  4 
@@ -43,31 +42,13 @@ class BleScanner :
     if (process_counter_ == 0) :
       sign = change_state false
       if sign :
-
-        // data_["time"]   = "$time"
-        // data_["state"]  = false
-        // data_["device"] = DEVICE_NAME
-        // data_["mac"]    = ""
-
-        //keep_measure data_
-
         task::
-          //keep_measure data_
           print "  $time | No  | $DEVICE_NAME"
     else :
       sign = change_state true
       process_counter_= 0
       if sign :
-
-        // data_["time"]   = "$time"
-        // data_["state"]  = false
-        // data_["device"] = DEVICE_NAME
-        // data_["mac"]    = mac_address_
-
-        //keep_measure data_
-
         task::
-          //keep_measure data_
           print "* $time | Yes | $DEVICE_NAME | $mac_address_"
 
   stop :
@@ -101,7 +82,6 @@ class BleScanner :
       sleep --ms=100
     adapter.close
     adapter = null
-    //close_connect
   
 sync_time :
   now := Time.now
@@ -115,11 +95,7 @@ sync_time :
   else:
     print "We already know the time is $now"
 
-main :
-
-  //connect_db
-  
+main :  
   sync_time
-
   bleScanner/BleScanner := BleScanner
   bleScanner.scan
