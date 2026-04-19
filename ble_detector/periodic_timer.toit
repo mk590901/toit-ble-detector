@@ -32,5 +32,10 @@ class PeriodicTimer :
     //print "final 2"
     is_running_ = false
     task_.cancel
+    //task_ = null  // Clear task
+    //print "Timer deleted"
+
+  dispose :
+    is_running_ = false
+    task_.cancel
     task_ = null  // Clear task
-    print "Timer deleted"
