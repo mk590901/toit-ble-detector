@@ -26,8 +26,11 @@ micrcx@micrcx-desktop:~/toit/ble_scanner$ jag run -d basic ble_scanner.toit
 Scanning for device with name: 'basic'
 Running 'ble_scanner.toit' on 'basic' ...
 Success: Sent 78KB code to 'basic' in 2.92s
-micrcx@micrcx-desktop:~/toit/ble_scanner$ 
+micrcx@micrcx-desktop:~/toit/ble_scanner$
 ```
+
+The application is represented by two practically identical files: _ble_scanner.toit_ and _ble_detector.toit_, which differ in minor details.
+
 ## Screen & log
 
 <img width="1600" height="900" alt="scanner from 2026-03-12 08-33-43" src="https://github.com/user-attachments/assets/19982973-cb3e-4dff-af43-138344c83e6a" />
