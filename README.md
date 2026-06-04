@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The app below, running on an __ESP32-S3__, continuously monitors the presence of a __BLE__ device in a room and tracks the disappearance and reappearance of the smart rings like __COLMI R09/R12__. Could try using the app to track a person's movements around the house. It's a shame, though, the smart ring only be used as a location tag 🤓, but this only experiment.
+Below is an application running on an __ESP32-S3__ continuously monitors the presence of a __BLE__ device in a room and detects its disappearance and reappearance. Any smart ring, such as the __COLMI R09/R12__, can be used as the device. Could try using the app to track a person's movements around the house 🤓 (just kidding). Really this is a test application designed to test the feasibility of creating an application on Toit that would continuously scan a health care __BLE__ device, connect to it when detected, perform measurements, and stop scanning when the connection is lost, returning to scanning mode again.
 
 ## Brief Description
 
