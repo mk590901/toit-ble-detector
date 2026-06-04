@@ -18,6 +18,8 @@ To minimize output, a __change_state__ function was created only detects device 
 
 ## Notes
 
+The application is represented by two practically identical files: _ble_scanner.toit_ and _ble_detector.toit_, which differ in minor details.
+
 > App using the ntp package (https://docs.toit.io/tutorials/misc/date-time)
 
 > Command to run app:
@@ -28,8 +30,6 @@ Running 'ble_scanner.toit' on 'basic' ...
 Success: Sent 78KB code to 'basic' in 2.92s
 micrcx@micrcx-desktop:~/toit/ble_scanner$
 ```
-
-The application is represented by two practically identical files: _ble_scanner.toit_ and _ble_detector.toit_, which differ in minor details.
 
 ## Screen & log
 
